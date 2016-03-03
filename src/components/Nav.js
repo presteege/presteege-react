@@ -6,7 +6,7 @@ class Nav extends React.Component{
   render(){
 
     return (
-      <nav>
+
         <ul>
           <li><IndexLink activeStyle={{ color: 'cornflowerblue' }} to="/">Accueil</IndexLink></li>
           <li><IndexLink activeStyle={{ color: 'cornflowerblue' }} to="/produits-terrain">Produits pour le terrain</IndexLink></li>
@@ -14,7 +14,7 @@ class Nav extends React.Component{
           <li><IndexLink activeStyle={{ color: 'cornflowerblue' }} to="/produits-perso">Produits personnalisés et personnalisables</IndexLink></li>
           <li><IndexLink activeStyle={{ color: 'cornflowerblue' }} to="/contact">Contact</IndexLink></li>
         </ul>
-      </nav>
+
     );
   }
 }

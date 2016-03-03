@@ -24,13 +24,14 @@ class App extends React.Component{
 
         <div className="index">
           <header>
-            <h2>Presteege Partner</h2><br/>
+            <h1>Presteege Partner</h1>
             <p>Nous donnons vie à vos envies</p>
+            <hr/>
+            <Nav />
+            <hr/>
           </header>
             <div className="wrapper">
             <article>{ this.props.children }</article>
-              <Nav />
-
               <aside>right</aside>
             </div>
           <footer>footer</footer>

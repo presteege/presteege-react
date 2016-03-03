@@ -1,4 +1,5 @@
 import React from 'react';
+let imgProdPerso = require('../images/produits-personalisables.jpg');
 
 class ProduitsPerso extends React.Component{
 
@@ -6,7 +7,7 @@ class ProduitsPerso extends React.Component{
 
     return (
       <div>
-        produits perso
+        <img src={imgProdPerso} />
       </div>
     );
   }

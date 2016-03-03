@@ -1,4 +1,5 @@
 import React from 'react';
+let imgAccueil = require('../images/image-accueil.jpg');
 
 class Accueil extends React.Component{
 
@@ -6,7 +7,7 @@ class Accueil extends React.Component{
 
     return (
       <div className="index">
-        changes in accueil
+        <img src={imgAccueil} />
       </div>
     );
   }
