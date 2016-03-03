@@ -1,0 +1,7 @@
+{
+  "generator-react-webpack": {
+    "appName": "presteege",
+    "style": "css",
+    "postcss": false
+  }
+}
