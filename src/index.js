@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import ProduitsImage from './components/ProduitsImage';
 import ProduitsPerso from './components/ProduitsPerso';
 import ProduitsTerrain from './components/ProduitsTerrain';
+require('styles/App.css');
 
 class App extends React.Component{
 
@@ -20,10 +21,20 @@ class App extends React.Component{
   render() {
 
     return (
-      <div className="index">
-        <Nav />
-        { this.props.children }
-      </div>
+
+        <div className="index">
+          <header>
+            <h2>Presteege Partner</h2><br/>
+            <p>Nous donnons vie à vos envies</p>
+          </header>
+            <div className="wrapper">
+            <article>{ this.props.children }</article>
+              <Nav />
+
+              <aside>right</aside>
+            </div>
+          <footer>footer</footer>
+        </div>
     );
 
   }

@@ -1,8 +1,20 @@
 /* Base Application Styles */
-body {
-  color: #fff;
-  background: #222;
+
+/*{ padding: 0; margin: 0; }
+html, body{ width: 100%; height: 100%; }
+*/
+
+@font-face
+{
+  font-family: 'bellevue';
+  src: url(../fonts/bellevue.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
+
+ul{ list-style-type: none; }
+
+a{ text-decoration: none; color: black; }
 
 .index img {
   margin: 40px auto;
@@ -18,4 +30,96 @@ body {
   border: 1px solid #000;
   border-width: 1px 0;
   background: #666;
+}
+
+/*
+from: https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Utilisation_des_flexbox_en_CSS
+Layout */
+
+* {
+  box-sizing: border-box; /* pour maîtriser width et flex-basis */
+}
+
+html {
+  display: flex; flex-direction: column; /* correction bug IE de min-height non appliqué à body */
+}
+
+body {
+  display: flex; /* crée un contexte flex pour ses enfants */
+  flex-direction: column; /* affichage vertical */
+  min-height: 100vh; /* toute la hauteur du viewport */
+  padding: 1em;
+  color: black;
+}
+
+.wrapper {
+  flex: 1 1 auto; /* occupe la hauteur restante */
+  display: flex; /* crée un contexte flex pour ses enfants */
+}
+
+nav,
+aside {
+  width: 10em;
+}
+
+article {
+  flex: 1; /* occupe la largeur restante */
+}
+
+nav {
+  order: -1; /* nav s'affiche en premier */
+}
+
+
+/* Responsive (fenêtres de moins de 640px) */
+
+@media (max-width: 640px) {
+  .wrapper {
+    flex-direction: column; /* affichage vertical */
+  }
+  nav,
+  aside {
+    width: auto; /* pour écraser la valeur 10em */
+  }
+  nav,
+  aside,
+  article {
+    flex-basis: auto; /* pour écraser la valeur 0, due au flex: 1 */
+  }
+  nav {
+    order: 0; /* nav reprend sa place */
+  }
+}
+
+/* Decoration */
+
+body {
+  margin: 0;
+  background: #e6e6e6;
+  font-family: arial, sans-serif;
+}
+header,
+nav,
+aside,
+article,
+footer {
+  margin: .4em;
+  padding: 1em;
+  border-radius: 6px;
+}
+header {
+  background: #ffeebb;
+  font-family: "bellevue";
+}
+nav {
+  background: #ccccff;
+}
+aside {
+  background: #ccccff;
+}
+article {
+  background: #dddd88;
+}
+footer {
+  background: #ffeebb;
 }

@@ -7,11 +7,13 @@ class Nav extends React.Component{
 
     return (
       <nav>
-        <IndexLink activeStyle={{ color: 'cornflowerblue' }} to="/">Accueil</IndexLink>
-        <IndexLink activeStyle={{ color: 'cornflowerblue' }} to="/produits-terrain">Produits pour le terrain</IndexLink>
-        <IndexLink activeStyle={{ color: 'cornflowerblue' }} to="/produits-image">Produits d'image</IndexLink>
-        <IndexLink activeStyle={{ color: 'cornflowerblue' }} to="/produits-perso">Produits personnalisés et personnalisables</IndexLink>
-        <IndexLink activeStyle={{ color: 'cornflowerblue' }} to="/contact">Contact</IndexLink>
+        <ul>
+          <li><IndexLink activeStyle={{ color: 'cornflowerblue' }} to="/">Accueil</IndexLink></li>
+          <li><IndexLink activeStyle={{ color: 'cornflowerblue' }} to="/produits-terrain">Produits pour le terrain</IndexLink></li>
+          <li><IndexLink activeStyle={{ color: 'cornflowerblue' }} to="/produits-image">Produits d'image</IndexLink></li>
+          <li><IndexLink activeStyle={{ color: 'cornflowerblue' }} to="/produits-perso">Produits personnalisés et personnalisables</IndexLink></li>
+          <li><IndexLink activeStyle={{ color: 'cornflowerblue' }} to="/contact">Contact</IndexLink></li>
+        </ul>
       </nav>
     );
   }
