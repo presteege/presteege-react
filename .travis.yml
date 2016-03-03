@@ -2,8 +2,8 @@ sudo: false
 language: node_js
 node_js:
   - node
-  - "5"
-  - "0.12"
+  #- "5"
+  #- "0.12"
 install:
   - npm i
   - npm run dist

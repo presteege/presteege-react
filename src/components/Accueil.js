@@ -6,7 +6,7 @@ class Accueil extends React.Component{
 
     return (
       <div className="index">
-        accueil
+        changes in accueil
       </div>
     );
   }
