@@ -34,7 +34,10 @@ class App extends React.Component{
             <article>{ this.props.children }</article>
             </div>
           <footer>
-            Tél: (+33) 0134845434
+            <ul>
+              <li><a href="mailto:presteege@wanadoo.fr">presteege@wanadoo.fr</a></li>
+              <li>Tél: (+33) 0134845434</li>
+            </ul>
           </footer>
         </div>
     );
