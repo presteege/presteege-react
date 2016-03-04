@@ -17,7 +17,6 @@ deploy:
   local_dir: dist
   acl: public_read
   region: us-west-2
-  #endpoint: presteege.fr.s3-website-us-west-2.amazonaws.com
   on:
     repo: presteege/presteege-react
 notifications:

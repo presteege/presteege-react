@@ -20,13 +20,26 @@ a{ text-decoration: none; color: black; }
 
 hr{ color: #ccc; background-color: #ccc; height: 1px; border: 0; background: #ccc; }
 
+
 .index img {
   margin: 40px auto;
   border-radius: 4px;
   background: #fff;
-  display: block;
+  display: flex;
+  max-width: 100%;
 }
+/*
+.index img{
 
+  position:absolute;
+  top:50%;
+  min-height:100%;
+  display:block;
+  left:50%;
+  -webkit-transform: translate(-50%, -50%);
+  min-width:100%;
+}
+*/
 .index .notice {
   margin: 20px auto;
   padding: 15px 0;
