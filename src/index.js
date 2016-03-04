@@ -32,9 +32,10 @@ class App extends React.Component{
           </header>
             <div className="wrapper">
             <article>{ this.props.children }</article>
-              <aside>right</aside>
             </div>
-          <footer>footer</footer>
+          <footer>
+            Tél: (+33) 0134845434
+          </footer>
         </div>
     );
 
