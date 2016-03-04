@@ -36,8 +36,8 @@ class Contact extends React.Component{
            <p><input type="text" name="name" placeholder="Votre nom prénom"/></p>
               <p><input type="email" name="email" placeholder="Votre email"/></p>
               <p><textarea placeholder="Votre message"></textarea></p>
+              <button type="submit" id="link_send" onClick={this.handleSubmit.bind(this)}>Envoyer</button>
           </form>
-          <button type="submit" id="link_send" value="Envoyer" onClick={this.handleSubmit.bind(this)}>Send</button>
         </div>
       );
     }
