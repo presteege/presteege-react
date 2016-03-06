@@ -92,7 +92,7 @@ nav {
 
 /* Responsive (fenêtres de moins de 640px) */
 
-@media (max-width: 640px) {
+@media (max-width: 480px) {
   .wrapper {
     flex-direction: column; /* affichage vertical */
   }
