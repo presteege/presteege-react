@@ -78,7 +78,6 @@ body {
 .wrapper {
   flex: 1 1 auto; /* occupe la hauteur restante */
   display: flex; /* crée un contexte flex pour ses enfants */
-  box-shadow: 1px 1px 12px #555;
 }
 
 nav,
@@ -144,6 +143,7 @@ aside {
 }
 article {
   background: #fff;
+  box-shadow: 1px 1px 12px #555;
 }
 footer {
   background: #fff;
