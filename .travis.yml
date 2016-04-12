@@ -13,7 +13,7 @@ deploy:
   skip_cleanup: true
   access_key_id: $AWS_ACCESS_ID
   secret_access_key: $AWS_SECRET_KEY
-  bucket: presteege.fr
+  bucket: www.presteege.fr
   local_dir: dist
   acl: public_read
   region: us-west-2
