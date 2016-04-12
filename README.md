@@ -1,6 +1,6 @@
------ [ http://presteege.fr.s3-website-us-west-2.amazonaws.com ] -----
+## reactjs version of presteege.fr
 
-- reactjs version of presteege.fr
+- original endpoint is http://presteege.fr.s3-website-us-west-2.amazonaws.com
 - source code hosted at github
 - using travis-ci to build the app and deploy to s3 (see the .travis.yml file)
 - contact page will use Google Script API to send email and save form datas
