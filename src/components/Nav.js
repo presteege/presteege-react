@@ -1,22 +1,19 @@
 import React from 'react';
+import MyLink from './MyLink';
 import { IndexLink } from 'react-router';
 
-class Nav extends React.Component{
+export default class Nav extends React.Component{
 
   render(){
-
-    return (
-
+      return (
         <ul>
-          <li><IndexLink activeStyle={{ color: 'cornflowerblue' }} to="/">Accueil</IndexLink></li>
-          <li><IndexLink activeStyle={{ color: 'cornflowerblue' }} to="/produits-terrain">Produits pour le terrain</IndexLink></li>
-          <li><IndexLink activeStyle={{ color: 'cornflowerblue' }} to="/produits-image">Produits d'image</IndexLink></li>
-          <li><IndexLink activeStyle={{ color: 'cornflowerblue' }} to="/produits-perso">Produits personnalisés et personnalisables</IndexLink></li>
-          <li><IndexLink activeStyle={{ color: 'cornflowerblue' }} to="/contact">Contact</IndexLink></li>
+          <li> <MyLink  to="/">Accueil</MyLink> </li>
+          <li><MyLink   to="/produits-terrain">Produits pour le terrain</MyLink></li>
+          <li><MyLink to="/produits-image">Produits d'image</MyLink></li>
+          <li><MyLink   to="/produits-perso">Produits personnalisés et personnalisables</MyLink></li>
+          <li><MyLink to="/contact">Contact</MyLink></li>
         </ul>
+      );
 
-    );
-  }
 }
-
-export default Nav;
+}
