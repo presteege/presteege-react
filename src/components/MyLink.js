@@ -1,12 +1,10 @@
 import React from 'react';
-import { IndexLink, Link } from 'react-router';
+import { IndexLink } from 'react-router';
 
 export default class MyLink extends React.Component {
     render () {
-      // console.log('location', location);
-      // console.log('this.props.to', this.props.to);
-      console.log('this.props.children ', this.props.children);
-
+       console.log('location', location);
+       console.log('this.props.to', this.props.to);
       if(~location.hash.indexOf(this.props.to)) {
 
 

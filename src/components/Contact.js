@@ -9,7 +9,7 @@ class Contact extends React.Component{
     this.state = { formValidate: false, ajaxStatus: '' };
   }
 
-  handleClick(e){
+  handleClick() {
 
     var oData = new FormData(document.forms.namedItem('contact'));
     var oReq = new XMLHttpRequest();
@@ -17,7 +17,7 @@ class Contact extends React.Component{
     this.setState({ formValidate: true });
 
     oReq.open('POST', 'https://script.google.com/macros/s/AKfycbyAmsqxG4MDWaqRKGU9mYPlY7sHcyLr8cDuBp2v5NTf1b9uo6E/exec', true);
-    oReq.onload = function(oEvent)
+    oReq.onload = function()
     {
       if (oReq.status == 200)
       {
